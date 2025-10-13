@@ -1,0 +1,122 @@
+.container-login-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 600px;
+}
+
+.container-login {
+    width: 650px; /* Fixed width */
+    height: 800px; /* Full height */
+    background-color: #e0fbfc;
+    position: fixed; /* Stays in place */
+    top: 78px;
+    right: 0; /* Sticks to the right */
+    margin-right: 100px;
+    padding: 20px;
+    text-align: center; /* Centers the text */
+    color: #5c6b73;
+}
+
+.login {
+    margin-top: 35%;
+    font-size: 35px;
+    font-weight: bold;
+    color: #5c6b73;
+}
+
+.login-form {
+    background-color: transparent;
+}
+
+.login-form input {
+    width: 400px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 3px solid #5c6b73; /* Visible border */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px;
+    background-color: transparent;
+    color: #5c6b73;
+    outline: none;
+}
+
+.login-form input[type='password']{
+    font-family: "Arial", sans-serif; /* Using a font with larger circles */
+    padding: 10px;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.login-form input::placeholder{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    opacity: 30%;
+    letter-spacing: 0;
+}
+
+.login-form input:focus{
+    outline: 2px solid #5C6B73;
+}
+
+.login-form button {
+    width: 190px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #253237;
+    color: #e0fbfc;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login-form button:hover {
+    background-color: #5c6b73;
+}
+
+.forgot-password {
+    width: 110px;
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600; 
+    color: #253237; 
+    text-decoration: none; /* Remove underline */
+    margin-top: 5px;
+    padding: 0%;
+    margin-left: 66%;
+    position: relative;
+    right: 0;
+    bottom: 20px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.register-span {
+    display: block;
+    text-align: center; /* Align to the center */
+    font-size: 14px; /* Make it small */
+    font-weight: 400; /* Make it bold */
+    color: #253237; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    margin-top: 150px; /* Space from password field */
+}
+
+.register-now {
+    color: #007bff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 700; /* Make it bold */
+}
+
+.register-now:hover {
+    font-size: 20px; /* Make it small */
+    text-decoration: underline; /* Add underline on hover */
+}

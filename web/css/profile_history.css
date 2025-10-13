@@ -1,0 +1,289 @@
+header {
+  position: fixed;
+  z-index: 1000;
+  overflow: auto;
+}
+
+header span {
+  color: #c2dfe3;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin: auto 20px;
+}
+
+/* Nav Bar */
+.left-sidenav ul {
+  top: 78px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: #282a29;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.left-sidenav li a {
+  display: block;
+  color: #e0fbfc;
+  padding: 20px 26px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin: auto 0;
+}
+
+.left-sidenav li a.active {
+  background-color: #9db4c0;
+  color: #5c6b73;
+}
+
+.left-sidenav li a:hover:not(.active) {
+  background-color: #c2dfe3;
+  color: #5c6b73;
+}
+
+
+/* Main Content */
+.main-content {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: flex-start;
+  /* Center vertically */
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 78px;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+/* Search Bar Container */
+.main-content .search-container {
+  margin: 50px auto;
+  width: 50%;
+  max-width: 500px;
+}
+
+
+/* Search Input */
+.main-content input[id=search] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #5C6B73;
+  border-radius: 25px;
+  font-size: 16px;
+  background-image: url('../images/images_nav/search.svg');
+  background-position: 97% 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding: 12px 20px;
+}
+
+.main-content input[id=search]:focus {
+  outline: 2px solid #5C6B73;
+}
+
+
+
+/* Filter link style */
+.search-container p {
+  margin: 10px 0;
+}
+
+.search-container p a {
+  padding: 5px 10px;
+  color: #4a5568;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.search-container p a:hover {
+  background-color: #edf2f7;
+  color: #2d3748;
+}
+
+/* Current active filter status */
+.search-container p a.active {
+  background-color: #7d9bb7;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-container input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+.order-container {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-info {
+  display: flex;
+  align-items: center;
+}
+
+.order-id-label {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.order-date {
+  color: #666;
+}
+
+.order-status {
+  display: flex;
+  align-items: center;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.status-delivered {
+  color: #4CAF50;
+}
+
+.status-pending {
+  color: #856404;
+}
+
+.status-shipped {
+  color: #004085;
+}
+
+.status-paid {
+  color:  #5bae6e;
+}
+
+.status-cancelled {
+  color: #721c24;
+}
+
+
+
+.product-list {
+  padding: 15px;
+}
+
+.product-item {
+  display: flex;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-name {
+  margin-bottom: 5px;
+}
+
+.product-name a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-variant {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.product-quantity {
+  color: #666;
+}
+
+.product-price {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.order-total {
+  font-weight: bold;
+  text-align: right;  
+  margin-left: auto; 
+}
+
+.total-price {
+  color: #2b689c;
+  font-size: 1.1em;
+}
+
+
+.order-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid #eee;
+
+}
+
+
+
+.no-orders {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 1.1em;
+}

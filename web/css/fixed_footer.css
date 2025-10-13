@@ -1,0 +1,11 @@
+footer {
+    width: 100%;
+    height: 180px; /* Set the desired height */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #253237;
+    color: #e0fbfc;
+    display: flex;  /* Aligns items side by side */
+    align-items: center;  /* Centers them vertically */
+}

@@ -1,0 +1,172 @@
+footer {
+    z-index: 9999;
+}
+
+/* Container */
+.container-register {
+    width: 800px; /* Fixed width */
+    height: 100%; /* Full height */
+    background-color: #e0fbfc;
+    position: relative; /* Stays in place */
+    top: 0;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    margin-right: 100px;
+    padding: 20px;
+    text-align: center; /* Centers the text */
+    color: #5c6b73;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Headings */
+.header-register {
+    margin-left: 2%;
+    margin-top: 7%;
+    text-align: center;
+    color: #5C6B73;
+}
+
+/* Form */
+.form-register {
+    display: grid;
+    flex-direction: column;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.profile-container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile-photo {
+    position: relative;
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    margin: 0 auto;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden; /* Ensures the image stays within the circle */
+    border: 4px solid #5C6B73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-image {
+    width: 100%; /* Ensures the image covers the circle */
+    height: 100%; /* Ensures the image covers the circle */
+    object-fit: cover; /* Ensures the image scales properly */
+}
+
+.upload-label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #253237;
+    color: #e0fbfc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes the button circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: #5C6B73;
+}
+
+.upload-label input[type="file"] {
+    display: none; /* Hides the default file input */
+}
+
+.upload-label span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Inputs */
+.container-register input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 3px solid #5C6B73;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.container-register input[type='password']{
+    font-family: "Arial", sans-serif; /* Using a font with larger circles */
+    padding: 10px;
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.container-register input::placeholder{
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    opacity: 30%;
+    letter-spacing: 0;
+}
+
+.container-register input:focus{
+    outline: 2px solid #5C6B73;
+}
+
+.container-register button {
+    width: 190px;
+    height: 40px;
+    padding: 10px;
+    margin: auto;
+    background-color: #253237;
+    color: #e0fbfc;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transform: translateY(20px);
+}
+
+.container-register button:hover {
+    background-color: #5c6b73;
+}
+
+.alr-have-acc {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px; 
+    font-weight: 400;
+    color: #253237; 
+    text-decoration: none; /* Remove underline */
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.container-register a {
+color: #007bff;
+text-decoration: none;
+}
+
+.container-register a:hover {
+text-decoration: underline;
+font-size: 20px;
+}
+
+.error {
+    color: red;
+    font-size: 18px;
+}

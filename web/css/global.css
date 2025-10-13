@@ -1,0 +1,152 @@
+/* Font -------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+body, input, button, textarea, select {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+}
+
+/* Layout ------------------------------------------------------------------ */
+
+html, body {
+    margin: 0;
+    padding: 0%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background: #253237;
+    flex-shrink: 0;
+    z-index: 9999;
+}
+
+header .logo {
+    padding: 10px 30px;
+    max-width: 100%;
+    height: 22px;
+    filter: invert(91%) sepia(5%) saturate(1773%) hue-rotate(171deg) brightness(81%) contrast(83%);
+}
+
+header .logo:hover {
+    filter: invert(84%) sepia(23%) saturate(126%) hue-rotate(134deg) brightness(103%) contrast(115%);
+}
+
+header nav {
+    padding: 0;
+    background: transparent;
+    display: flex;
+    border-left: #e0fbfc 2px solid;
+    margin-right: 5px;
+}
+
+header nav a{
+    padding: 5px 18px;
+    filter: invert(80%) sepia(9%) saturate(572%) hue-rotate(156deg) brightness(88%) contrast(85%);;
+    white-space: nowrap;
+
+}
+
+header nav a:hover {
+    filter: invert(84%) sepia(23%) saturate(126%) hue-rotate(134deg) brightness(103%) contrast(115%);
+}
+
+footer {
+    width: 100%;
+    height: 190px; /* Set the desired height */
+    background: #253237;
+    color: #e0fbfc;
+    display: flex;  /* Aligns items side by side */
+    align-items: center;  /* Centers them vertically */
+    margin: auto 0;  /* Centers them horizontally */
+    bottom: 0;
+}
+
+footer .logo{
+    filter: invert(84%) sepia(23%) saturate(126%) hue-rotate(134deg) brightness(103%) contrast(115%);
+    height: 60px;
+    max-width: 100%;
+}
+
+.footer-logo-section {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 80px;
+  }
+
+  .footer-divider {
+    border-left: 1px solid #C2DFE3;
+  }
+  
+
+  .footer-links-official {
+    list-style: none;
+    padding-left: 200px; 
+    padding-top: 10px;
+    text-align: center;
+  }
+  
+
+  .footer-links-info {
+    list-style-type: none;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 10px;
+    text-align: center; 
+  }
+
+  .footer-about-us {
+    list-style-type: none;
+    padding-left: 120px;
+    padding-top: 10px;
+    text-align: left;
+  }
+  
+  .footer-about-us .social-btn img {
+    height: 35px;
+    width: 35px;
+    margin: 0 5px;
+    margin-top: 10px;
+  }
+
+  .footer-about-us .social-btn img:hover{
+    filter: invert(84%) sepia(23%) saturate(126%) hue-rotate(134deg) brightness(103%) contrast(115%);
+  }
+  
+  .footer-copyright {
+    text-align: right;
+    padding-top: 80px;
+    font-size: 12px;
+  }
+  
+
+  .footer-heading {
+    font-weight: bold;
+  }
+  
+  .footer-slogan {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .footer-social-heading {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: #9db4c0;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+    color: #C2DFE3;
+  }

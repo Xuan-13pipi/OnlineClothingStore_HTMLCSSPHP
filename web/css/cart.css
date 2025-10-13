@@ -1,0 +1,271 @@
+.search-container {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #5C6B73;
+  border-radius: 25px;
+  font-size: 16px;
+  background-image: url('../images/images_nav/search.svg');
+  background-position: 97% 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding: 12px 20px;
+  background-color: #f8f9fa;
+}
+
+.search-container input[type="text"]:focus {
+  outline: 2px solid #5C6B73;
+  background-color: white;
+}
+
+/* Cart Container */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  color: #253237;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid #e0fbfc;
+  padding-bottom: 0.5rem;
+}
+
+/* Cart Table Styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.table thead {
+  background: #253237;
+}
+
+.table th {
+  color: #e0fbfc;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+.table img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 1rem;
+  border: 1px solid #dee2e6;
+}
+
+/* Quantity Input */
+input[type="number"] {
+  width: 70px;
+  border: 2px solid #5C6B73;
+  border-radius: 4px;
+  padding: 0.5rem;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #5C6B73;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #253237;
+}
+
+.btn-danger {
+  background: #BF616A;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: red;
+}
+
+.btn-danger:active {
+  font-weight: 800;;
+}
+
+.btn-info {
+  background: #9db4c0;
+  color: #253237;
+}
+
+.btn-info:hover {
+  background: #253237;
+  color: #9db4c0;
+}
+
+.btn-info:active {
+  font-weight: 800;;
+}
+
+
+/* Flash Messages */
+#flash-messages {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  z-index: 10000;
+  width: 300px;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: white;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideIn 0.5s forwards, fadeOut 0.5s forwards 4.5s;
+}
+
+.alert-success {
+  background-color: #4CAF50;
+}
+
+.alert-danger {
+  background-color: #f44336;
+}
+
+@keyframes slideIn {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+      opacity: 0;
+      visibility: hidden;
+  }
+}
+
+/* Action Buttons Container */
+.text-right {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      margin: 1rem;
+      padding: 1rem;
+  }
+  
+  .table {
+      display: block;
+      overflow-x: auto;
+  }
+  
+  .table img {
+      width: 50px;
+      height: 50px;
+  }
+}
+
+tfoot tr {
+  display: table-row;
+  background-color: #f8f9fa;
+  border-top: 2px solid #dee2e6;
+}
+
+tfoot td {
+  background: transparent;
+  color: #253237;
+  font-weight: normal;
+  font-size: inherit;
+  padding: 1rem;
+  border: none;
+  text-align: left;
+}
+
+tfoot td:nth-child(5),
+tfoot td:nth-child(6),
+tfoot td:nth-child(7) {
+  padding: 0;
+}
+
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.summary-row.subtotal {
+  background-color: #ffffff;
+  color: #253237;
+}
+
+.summary-row.shipping {
+  background-color: #ffffff;
+  color: #253237;
+}
+
+.summary-row.grand-total {
+  background-color: #1e2a2f;
+  color: #e0fbfc;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.summary-label {
+  font-weight: 600;
+}
+
+.summary-value {
+  text-align: right;
+  font-weight: 600;
+  min-width: 100px;
+}
+
+tfoot tr:last-child td {
+  padding-bottom: 1.5rem;
+} 
