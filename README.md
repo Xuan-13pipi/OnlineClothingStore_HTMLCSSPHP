@@ -11,7 +11,9 @@ Dashboard: Overview of sales, orders, and customers Product Management: Add, edi
 
 ### Technologies Used
 Programming Language: HTML CSS JAVASCRIPT PHP
+
 Development Environment: Visual Studio Code, XAMPP
+
 Database: MySQL
 
 ### Test Credentials:
